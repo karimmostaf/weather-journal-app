@@ -34,6 +34,6 @@ function addData(req, res) {
     let data = req.body;
     projectData.temp = data.temp;
     projectData.date = data.date;
-    projectData.feeling = data.feeling;
+    projectData.content = data.content;
     res.send(projectData);
 }
