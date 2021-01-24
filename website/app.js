@@ -19,6 +19,10 @@ function performAction(e) {
     const zipEnter = code.value;
     const content = feeling.value;
     //get all data for user and uddata with it user interface
+    if (zip.value == '' || feelings.value == '') {
+        alert("Please enter the values!");
+        return
+    }
     getData(apiBaseUrl, zipEnter, key)
         .then((userData) => {
             console.log(userData)
